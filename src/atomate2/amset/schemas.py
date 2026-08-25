@@ -119,7 +119,7 @@ class AmsetTaskDocument(StructureMetadata):
     )
     input: dict = Field(None, description="The input settings")
     transport: TransportData = Field(None, description="The transport results")
-    usage_stats: UsageStats = Field(None, description="Timing and memory usage")
+    usage_stats: UsageStats | None = Field(None, description="Timing and memory usage")
     mesh: MeshData = Field(None, description="Full AMSET mesh data")
     converged: bool = Field(
         None, description="Whether the transport results are converged within 10 %"
