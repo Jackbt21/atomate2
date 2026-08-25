@@ -12,8 +12,8 @@ from atomate2.common.files import copy_files, get_zfile, gunzip_files, rename_fi
 from atomate2.utils.file_client import FileClient, auto_fileclient
 from atomate2.utils.path import strip_hostname
 
-if TYPE_CHECKING:
-    from pathlib import Path
+
+from pathlib import Path
 
 
 logger = logging.getLogger(__name__)
